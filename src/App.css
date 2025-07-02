@@ -1,0 +1,46 @@
+.fireworks-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.fireworks-container::before,
+.fireworks-container::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff0, #f00, transparent);
+  animation: explode 2s infinite;
+  opacity: 0.8;
+}
+
+.fireworks-container::before {
+  top: 20%;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.fireworks-container::after {
+  top: 60%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
