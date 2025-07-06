@@ -22,7 +22,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="h-screen bg-gradient-to-br from-pink-200 to-purple-200 flex flex-col items-center justify-center text-center relative px-4 overflow-hidden">
+    <div className="h-screen bg-black flex flex-col items-center justify-center text-center relative px-4 overflow-hidden">
       {/* Audio */}
       <audio ref={audioRef} loop src="/music.mp3" />
 
@@ -57,7 +57,7 @@ const Home = () => {
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-xl shadow-xl max-w-sm text-center space-y-4">
             <h2 className="text-2xl font-bold text-primary">Selamat Datang!</h2>
-            <p>Klik "Mulai" untuk menyalakan musik & kembang api 🎉</p>
+            <p>Klik "Mulai" untuk melihat hasil dokumentasi HUT Stt Eka Budhi Dharma 🎉</p>
             <button className="btn btn-primary" onClick={handleStartCelebration}>Mulai</button>
           </div>
         </div>

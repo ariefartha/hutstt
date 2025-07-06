@@ -2,22 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Fireworks } from '@fireworks-js/react';
 
-// const allPhotos = Array.from({ length: 30 }, (_, i) => `/example${i + 1}.jpg`);
-const allPhotos = [
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-  '/example.jpg',
-];
+const allPhotos = Array.from({ length: 65 }, (_, i) => `/${i + 1}.jpg`);
+
+
 
 const Photo = () => {
   const [visibleCount, setVisibleCount] = useState(10);
